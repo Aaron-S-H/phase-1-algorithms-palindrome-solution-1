@@ -1,10 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = wordReverse(word);
+  return word === reversedWord;
 }
+function wordReverse(word) {
+  return word.split("").reverse().join("");
+}
+isPalindrome("mom");
+isPalindrome("racecar");
+ 
 
-/* 
-  Add your pseudocode here
-*/
 
 /*
   Add written explanation of your solution here
